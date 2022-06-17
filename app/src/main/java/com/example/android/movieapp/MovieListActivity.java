@@ -105,7 +105,7 @@ public class MovieListActivity extends AppCompatActivity {
             public void onResponse(Call<MovieModel> call, Response<MovieModel> response) {
                 if(response.code() == 200){
                     MovieModel movie = response.body();
-                    Log.v("Tag","The Response" + movie.getTitle());
+                  //  Log.v("Tag","The Response" + movie.getTitle());
 
                 }else{
                     try{

@@ -22,9 +22,9 @@ public interface MovieApi {
 
     //  https://api.themoviedb.org/3/movie/550?api_key=880843f1bf799de7677a489143f9226b
 
-    @GET("/3/movie{id}?")
+    @GET("/3/movie{movie_id}?")
     Call<MovieModel> getMovie(
-            @Path("id") int id,
+            @Path("movie_id") int movie_id,
             @Query("api_key") String api_key
     );
 
